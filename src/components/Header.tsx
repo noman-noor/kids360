@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,9 +21,7 @@ export const Header = () => {
             className="flex items-center gap-3"
             whileHover={{ scale: 1.02 }}
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-gold-bright to-gold-warm flex items-center justify-center">
-              <span className="text-purple-deep font-display font-bold text-lg">360</span>
-            </div>
+            <img src={logo} alt="Islam360Kids" className="w-10 h-10 rounded-xl" />
             <span className="font-display text-xl font-bold text-foreground">
               Islam360<span className="text-gold-bright">Kids</span>
             </span>

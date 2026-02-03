@@ -49,24 +49,25 @@ export const DownloadSection = () => {
                 size="xl"
                 className="w-full sm:w-auto min-w-[200px]"
               >
-                <Apple className="w-6 h-6 mr-2" />
-                <div className="text-left">
-                  <div className="text-xs font-normal opacity-80">Download on</div>
-                  <div className="font-bold">App Store</div>
-                </div>
-              </Button>
-            </motion.div>
-
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-              <Button
-                variant="hero"
-                size="xl"
-                className="w-full sm:w-auto min-w-[200px]"
-              >
                 <Smartphone className="w-6 h-6 mr-2" />
                 <div className="text-left">
                   <div className="text-xs font-normal opacity-80">Get it on</div>
                   <div className="font-bold">Google Play</div>
+                </div>
+              </Button>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: 1.02 }}>
+              <Button
+                variant="heroOutline"
+                size="xl"
+                className="w-full sm:w-auto min-w-[200px] opacity-80 cursor-default"
+                disabled
+              >
+                <Apple className="w-6 h-6 mr-2" />
+                <div className="text-left">
+                  <div className="text-xs font-normal opacity-80">Coming Soon</div>
+                  <div className="font-bold">App Store</div>
                 </div>
               </Button>
             </motion.div>
