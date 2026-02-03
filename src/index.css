@@ -1,96 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Islam360Kids Design System - Playful Purple Theme for Children */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Purple Palette */
+    --background: 270 50% 12%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card surfaces - lighter purple */
+    --card: 270 45% 20%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 270 45% 18%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Vibrant Purple */
+    --primary: 270 70% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Golden Yellow (for CTAs and highlights) */
+    --secondary: 45 95% 65%;
+    --secondary-foreground: 270 50% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted - Soft purple */
+    --muted: 270 30% 25%;
+    --muted-foreground: 270 20% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Fresh Green (like parent site) */
+    --accent: 145 60% 45%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 270 30% 30%;
+    --input: 270 30% 25%;
+    --ring: 270 70% 55%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Custom Kids Theme Colors */
+    --purple-deep: 270 60% 15%;
+    --purple-rich: 270 55% 25%;
+    --purple-vibrant: 270 70% 50%;
+    --purple-glow: 280 75% 65%;
+    --purple-light: 270 50% 75%;
+    
+    --gold-bright: 45 95% 55%;
+    --gold-warm: 40 90% 60%;
+    --gold-glow: 45 100% 70%;
+    
+    --green-fresh: 145 60% 45%;
+    --green-light: 145 55% 60%;
+    
+    --pink-soft: 330 70% 70%;
+    --blue-sky: 200 80% 65%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Gradients */
+    --gradient-hero: linear-gradient(180deg, hsl(270 60% 18%) 0%, hsl(280 55% 25%) 50%, hsl(270 50% 20%) 100%);
+    --gradient-purple: linear-gradient(135deg, hsl(270 70% 50%) 0%, hsl(280 75% 60%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 95% 55%) 0%, hsl(40 90% 60%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(270 45% 25%) 0%, hsl(270 40% 18%) 100%);
+    
+    /* Shadows */
+    --shadow-glow-purple: 0 0 40px hsl(270 70% 50% / 0.4);
+    --shadow-glow-gold: 0 0 30px hsl(45 95% 55% / 0.5);
+    --shadow-card: 0 8px 32px hsl(270 50% 10% / 0.5);
+    --shadow-float: 0 20px 60px hsl(270 50% 10% / 0.6);
 
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar (keeping defaults) */
+    --sidebar-background: 270 50% 15%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 270 70% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 40% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 270 30% 30%;
+    --sidebar-ring: 270 70% 55%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
+    /* Same as light - this is a dark-first design */
+    --background: 270 50% 12%;
+    --foreground: 0 0% 100%;
+    --card: 270 45% 20%;
+    --card-foreground: 0 0% 100%;
+    --popover: 270 45% 18%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 270 70% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 95% 65%;
+    --secondary-foreground: 270 50% 15%;
+    --muted: 270 30% 25%;
+    --muted-foreground: 270 20% 70%;
+    --accent: 145 60% 45%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 270 30% 30%;
+    --input: 270 30% 25%;
+    --ring: 270 70% 55%;
   }
 }
 
@@ -99,7 +113,118 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Baloo 2', cursive;
+  }
+}
+
+@layer components {
+  /* Floating animation for stars */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 6s ease-in-out 2s infinite;
+  }
+
+  .animate-twinkle {
+    animation: twinkle 3s ease-in-out infinite;
+  }
+
+  .animate-bounce-slow {
+    animation: bounce-slow 3s ease-in-out infinite;
+  }
+
+  /* Glow effects */
+  .glow-purple {
+    box-shadow: var(--shadow-glow-purple);
+  }
+
+  .glow-gold {
+    box-shadow: var(--shadow-glow-gold);
+  }
+
+  /* Glass effect for cards */
+  .glass-card {
+    background: linear-gradient(145deg, hsl(270 45% 25% / 0.8) 0%, hsl(270 40% 18% / 0.9) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid hsl(270 50% 40% / 0.3);
+  }
+}
+
+@layer utilities {
+  /* Text gradient */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(45 95% 55%) 0%, hsl(40 90% 65%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-purple {
+    background: linear-gradient(135deg, hsl(270 70% 65%) 0%, hsl(280 75% 75%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Background patterns */
+  .bg-stars {
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, hsl(45 100% 80%), transparent),
+      radial-gradient(2px 2px at 40px 70px, hsl(45 100% 85%), transparent),
+      radial-gradient(1px 1px at 90px 40px, hsl(0 0% 100%), transparent),
+      radial-gradient(2px 2px at 130px 80px, hsl(45 100% 75%), transparent),
+      radial-gradient(1px 1px at 160px 30px, hsl(0 0% 90%), transparent);
+    background-size: 200px 100px;
+  }
+}
+
+/* Keyframes */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(45 95% 55% / 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(45 95% 55% / 0.7);
   }
 }
