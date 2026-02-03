@@ -2,21 +2,16 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { FloatingStars } from "./FloatingStars";
 import { Play, Download } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
 import heroCharacter from "@/assets/hero-character.png";
 
 export const HeroSection = () => {
   return (
     <section 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16"
-      style={{
-        backgroundImage: `url(${heroBg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16 bg-gradient-to-br from-purple-vibrant via-purple-rich to-purple-deep"
     >
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-background/80" />
+      {/* Animated gradient overlay */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_hsl(var(--gold-bright)/0.15)_0%,_transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_hsl(var(--purple-glow)/0.3)_0%,_transparent_50%)]" />
       
       {/* Floating Stars */}
       <FloatingStars />
@@ -65,28 +60,6 @@ export const HeroSection = () => {
               </Button>
             </div>
 
-            {/* Trust Badges */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.8 }}
-              className="mt-10 flex flex-wrap gap-6 justify-center lg:justify-start"
-            >
-              <div className="text-center">
-                <div className="font-display text-3xl font-bold text-gold-bright">500K+</div>
-                <div className="text-sm text-muted-foreground">Happy Kids</div>
-              </div>
-              <div className="w-px h-12 bg-border" />
-              <div className="text-center">
-                <div className="font-display text-3xl font-bold text-gold-bright">4.9⭐</div>
-                <div className="text-sm text-muted-foreground">App Rating</div>
-              </div>
-              <div className="w-px h-12 bg-border" />
-              <div className="text-center">
-                <div className="font-display text-3xl font-bold text-gold-bright">50+</div>
-                <div className="text-sm text-muted-foreground">Countries</div>
-              </div>
-            </motion.div>
           </motion.div>
 
           {/* Right Content - Character */}
