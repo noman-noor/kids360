@@ -7,11 +7,11 @@ import heroCharacter from "@/assets/hero-character.png";
 export const HeroSection = () => {
   return (
     <section 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16 bg-gradient-to-br from-purple-vibrant via-purple-rich to-purple-deep"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16"
+      style={{ backgroundColor: 'hsl(270 60% 50%)' }}
     >
-      {/* Animated gradient overlay */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_hsl(var(--gold-bright)/0.15)_0%,_transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_hsl(var(--purple-glow)/0.3)_0%,_transparent_50%)]" />
+      {/* Subtle gradient overlays for depth */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20" />
       
       {/* Floating Stars */}
       <FloatingStars />
