@@ -44,26 +44,17 @@ export const Footer = () => {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#features"
-                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
-                >
+                <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
                   Features
                 </a>
               </li>
               <li>
-                <a
-                  href="#about"
-                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
-                >
+                <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
                   About Us
                 </a>
               </li>
               <li>
-                <a
-                  href="#download"
-                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
-                >
+                <a href="#download" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
                   Download
                 </a>
               </li>
@@ -87,10 +78,7 @@ export const Footer = () => {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
-                >
+                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
                   Privacy Policy
                 </a>
               </li>
