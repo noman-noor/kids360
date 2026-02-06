@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 export const Header = () => {
@@ -29,15 +30,15 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="/#features" className="text-muted-foreground hover:text-foreground transition-colors font-semibold">
+            <Link to="/#features" className="text-muted-foreground hover:text-foreground transition-colors font-semibold">
               Features
-            </a>
-            <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors font-semibold">
+            </Link>
+            <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors font-semibold">
               About
-            </a>
-            <a href="/#download" className="text-muted-foreground hover:text-foreground transition-colors font-semibold">
+            </Link>
+            <Link to="/#download" className="text-muted-foreground hover:text-foreground transition-colors font-semibold">
               Download
-            </a>
+            </Link>
           </nav>
 
           {/* CTA Button */}
@@ -64,15 +65,15 @@ export const Header = () => {
             className="md:hidden mt-2 rounded-2xl bg-card/95 backdrop-blur-lg border border-border/50 p-4"
           >
             <nav className="flex flex-col gap-4">
-              <a href="/#features" className="text-foreground font-semibold py-2" onClick={() => setIsMenuOpen(false)}>
+              <Link to="/#features" className="text-foreground font-semibold py-2" onClick={() => setIsMenuOpen(false)}>
                 Features
-              </a>
-              <a href="/about" className="text-foreground font-semibold py-2" onClick={() => setIsMenuOpen(false)}>
+              </Link>
+              <Link to="/about" className="text-foreground font-semibold py-2" onClick={() => setIsMenuOpen(false)}>
                 About
-              </a>
-              <a href="/#download" className="text-foreground font-semibold py-2" onClick={() => setIsMenuOpen(false)}>
+              </Link>
+              <Link to="/#download" className="text-foreground font-semibold py-2" onClick={() => setIsMenuOpen(false)}>
                 Download
-              </a>
+              </Link>
               <Button variant="hero" size="lg" className="w-full mt-2">
                 Download App
               </Button>
