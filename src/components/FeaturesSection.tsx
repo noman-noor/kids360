@@ -20,8 +20,8 @@ const features = [
   },
   {
     icon: Moon,
-    title: "30th Para",
-    description: "Memorize the 30th Para with audio recitations, translations, and progress tracking.",
+    title: "Amma Para",
+    description: "Memorize the Amma Para with audio recitations, translations, and progress tracking.",
     color: "from-purple-vibrant to-purple-glow",
     bgColor: "bg-purple-vibrant/10",
     iconColor: "text-purple-glow",

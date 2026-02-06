@@ -31,17 +31,17 @@ export const Footer = () => {
             <h4 className="font-display font-bold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <a href="/#features" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
                   Features
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#download" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <a href="/#download" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
                   Download
                 </a>
               </li>
@@ -58,7 +58,7 @@ export const Footer = () => {
             <h4 className="font-display font-bold text-foreground mb-4">Legal</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <a href="/privacy-policy" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
                   Privacy Policy
                 </a>
               </li>

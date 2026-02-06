@@ -109,7 +109,15 @@ export const HeroSection = () => {
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, delay: 1.5 }}
             >
-              <span className="font-display font-bold text-pink-soft">🕌 30th Para</span>
+              <span className="font-display font-bold text-pink-soft">🕌 Amma Para</span>
+            </motion.div>
+
+            <motion.div
+              className="absolute bottom-20 right-5 bg-card/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-card border border-border/50"
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 3, repeat: Infinity, delay: 2 }}
+            >
+              <span className="font-display font-bold text-blue-sky">🤲 Duas</span>
             </motion.div>
           </motion.div>
         </div>
