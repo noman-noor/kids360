@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { Heart, Mail, MapPin, Phone } from "lucide-react";
+import { Heart, Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 import Logo from "../assets/logo.png";
 
 export const Footer = () => {
@@ -44,19 +44,19 @@ export const Footer = () => {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link to="/#features" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
                   Features
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#download" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link to="/#download" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
                   Download
-                </a>
+                </Link>
               </li>
               <li>
                 <a
@@ -78,25 +78,25 @@ export const Footer = () => {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link to="/privacy-policy" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                 >
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                 >
                   Cookie Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
