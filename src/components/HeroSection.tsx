@@ -87,9 +87,9 @@ export const HeroSection = () => {
               }}
             />
 
-            {/* Feature Badges floating around character */}
+            {/* Feature Badges floating around character - positioned to avoid overlap */}
             <motion.div
-              className="absolute top-20 left-0 bg-card/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-card border border-border/50"
+              className="absolute top-4 -left-16 bg-card/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-card border border-border/50 z-20"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
             >
@@ -97,7 +97,7 @@ export const HeroSection = () => {
             </motion.div>
 
             <motion.div
-              className="absolute top-1/2 right-0 bg-card/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-card border border-border/50"
+              className="absolute top-4 -right-16 bg-card/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-card border border-border/50 z-20"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, delay: 1 }}
             >
@@ -105,7 +105,7 @@ export const HeroSection = () => {
             </motion.div>
 
             <motion.div
-              className="absolute bottom-32 left-10 bg-card/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-card border border-border/50"
+              className="absolute top-1/2 -translate-y-1/2 -left-20 bg-card/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-card border border-border/50 z-20"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, delay: 1.5 }}
             >
@@ -113,7 +113,7 @@ export const HeroSection = () => {
             </motion.div>
 
             <motion.div
-              className="absolute bottom-20 right-5 bg-card/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-card border border-border/50"
+              className="absolute top-1/2 -translate-y-1/2 -right-16 bg-card/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-card border border-border/50 z-20"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, delay: 2 }}
             >
