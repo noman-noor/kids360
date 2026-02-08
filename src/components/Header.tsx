@@ -43,9 +43,11 @@ export const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="hero" size="lg">
-              Download App
-            </Button>
+            <a href="https://play.google.com/store/apps/details?id=com.islam360kids" target="_blank" rel="noopener noreferrer">
+              <Button variant="hero" size="lg">
+                Download App
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -74,9 +76,11 @@ export const Header = () => {
               <Link to="/#download" className="text-foreground font-semibold py-2" onClick={() => setIsMenuOpen(false)}>
                 Download
               </Link>
-              <Button variant="hero" size="lg" className="w-full mt-2">
-                Download App
-              </Button>
+              <a href="https://play.google.com/store/apps/details?id=com.islam360kids" target="_blank" rel="noopener noreferrer">
+                <Button variant="hero" size="lg" className="w-full mt-2">
+                  Download App
+                </Button>
+              </a>
             </nav>
           </motion.div>
         )}
