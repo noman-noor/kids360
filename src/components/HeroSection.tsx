@@ -99,7 +99,7 @@ export const HeroSection = () => {
             </motion.div>
 
             <motion.div
-              className="absolute top-8 -right-4 lg:-right-8 bg-card/90 backdrop-blur-sm rounded-2xl px-3 py-2 shadow-card border border-border/50 z-20"
+              className="absolute top-8 right-2 lg:-right-8 bg-card/90 backdrop-blur-sm rounded-2xl px-3 py-2 shadow-card border border-border/50 z-20"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, delay: 1 }}
             >
@@ -115,7 +115,7 @@ export const HeroSection = () => {
             </motion.div>
 
             <motion.div
-              className="absolute top-[45%] -right-4 lg:-right-8 bg-card/90 backdrop-blur-sm rounded-2xl px-3 py-2 shadow-card border border-border/50 z-20"
+              className="absolute top-[45%] right-2 lg:-right-8 bg-card/90 backdrop-blur-sm rounded-2xl px-3 py-2 shadow-card border border-border/50 z-20"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, delay: 2 }}
             >
