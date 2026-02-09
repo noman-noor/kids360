@@ -44,17 +44,19 @@ export const DownloadSection = () => {
           {/* Download Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-              <Button
-                variant="hero"
-                size="xl"
-                className="w-full sm:w-auto min-w-[200px]"
-              >
-                <Smartphone className="w-6 h-6 mr-2" />
-                <div className="text-left">
-                  <div className="text-xs font-normal opacity-80">Get it on</div>
-                  <div className="font-bold">Google Play</div>
-                </div>
-              </Button>
+              <a href="https://play.google.com/store/apps/details?id=com.islam360kids" target="_blank" rel="noopener noreferrer">
+                <Button
+                  variant="hero"
+                  size="xl"
+                  className="w-full sm:w-auto min-w-[200px]"
+                >
+                  <Smartphone className="w-6 h-6 mr-2" />
+                  <div className="text-left">
+                    <div className="text-xs font-normal opacity-80">Get it on</div>
+                    <div className="font-bold">Google Play</div>
+                  </div>
+                </Button>
+              </a>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.02 }}>

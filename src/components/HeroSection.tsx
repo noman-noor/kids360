@@ -50,10 +50,12 @@ export const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="xl" className="group">
-                <Download className="w-5 h-5 mr-2" />
-                Download Free
-              </Button>
+              <a href="https://play.google.com/store/apps/details?id=com.islam360kids" target="_blank" rel="noopener noreferrer">
+                <Button variant="hero" size="xl" className="group">
+                  <Download className="w-5 h-5 mr-2" />
+                  Download Free
+                </Button>
+              </a>
               <Button variant="heroOutline" size="xl" className="group">
                 <Play className="w-5 h-5 mr-2" />
                 Watch Demo
@@ -89,35 +91,35 @@ export const HeroSection = () => {
 
             {/* Feature Badges floating around character */}
             <motion.div
-              className="absolute top-20 left-0 bg-card/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-card border border-border/50"
+              className="absolute top-12 left-0 lg:left-4 bg-card/90 backdrop-blur-sm rounded-2xl px-3 py-2 shadow-card border border-border/50 z-20"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
             >
-              <span className="font-display font-bold text-gold-bright">📖 Qaida</span>
+              <span className="font-display font-bold text-gold-bright text-sm">📖 Qaida</span>
             </motion.div>
 
             <motion.div
-              className="absolute top-1/2 right-0 bg-card/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-card border border-border/50"
+              className="absolute top-12 right-0 lg:right-4 bg-card/90 backdrop-blur-sm rounded-2xl px-3 py-2 shadow-card border border-border/50 z-20"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, delay: 1 }}
             >
-              <span className="font-display font-bold text-accent">📚 Stories</span>
+              <span className="font-display font-bold text-accent text-sm">📚 Stories</span>
             </motion.div>
 
             <motion.div
-              className="absolute bottom-32 left-10 bg-card/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-card border border-border/50"
+              className="absolute top-[40%] left-0 lg:left-2 bg-card/90 backdrop-blur-sm rounded-2xl px-3 py-2 shadow-card border border-border/50 z-20"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, delay: 1.5 }}
             >
-              <span className="font-display font-bold text-pink-soft">🕌 Amma Para</span>
+              <span className="font-display font-bold text-pink-soft text-sm">🕌 Amma Para</span>
             </motion.div>
 
             <motion.div
-              className="absolute bottom-20 right-5 bg-card/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-card border border-border/50"
+              className="absolute top-[40%] right-0 lg:right-2 bg-card/90 backdrop-blur-sm rounded-2xl px-3 py-2 shadow-card border border-border/50 z-20"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, delay: 2 }}
             >
-              <span className="font-display font-bold text-blue-sky">🤲 Duas</span>
+              <span className="font-display font-bold text-blue-sky text-sm">🤲 Duas</span>
             </motion.div>
           </motion.div>
         </div>
