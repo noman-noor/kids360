@@ -84,10 +84,10 @@ export const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/terms-and-conditions"
                   className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                 >
-                  Terms of Service
+                  Terms &amp; Conditions
                 </Link>
               </li>
               <li>
